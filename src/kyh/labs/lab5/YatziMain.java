@@ -9,10 +9,10 @@ public class YatziMain {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Yatzi!");
-        while(true){                // Kör på tills vi bryter på rad 14. Testade "while(gameON)" men då krävs en extra inmatning. Varför???
+        do
+        {
             gameRound();            // Kör en spelrunda.
-            if(!gameOn) break;      // Bryt om flaggan gameOn är falsk, dvs efter Yatsi eller när man valt att avsluta.
-        }
+        } while (gameOn);           // Upprepa tills gameOn blir falsk.
         sc.close();
         System.out.println("Bye bye!");
     }
