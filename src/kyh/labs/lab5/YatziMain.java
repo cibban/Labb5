@@ -32,7 +32,7 @@ public class YatziMain {
             return;
         } else if(i<3) {                                    // Under pågående runda.
             System.out.println("Want to throw again? (y for yes, anything else for no)");
-        } else {                            // Efter rundans slut.
+        } else {                                            // Efter rundans slut.
             System.out.println("Game over! Want to play again? (y for yes, anything else for no)");
         }
         gameOn = sc.nextLine().toLowerCase().equals("y");   // Lyssna på svar. Accepterar både stort och litet Y.
